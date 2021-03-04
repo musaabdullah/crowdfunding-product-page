@@ -108,7 +108,7 @@ body {
     margin: 20px;
     width: 81.4%;
     background: white;
-    padding: 60px ;
+    padding: 60px;
 }
 
 .main__middle__doller {
@@ -140,6 +140,76 @@ body {
    background:hsl(176, 50%, 47%);
    border-radius: 20px;
    height: 10px;
+}
+
+.main__bottom {
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    dipslay: flex;
+}
+.main__bottom .bottom__title{
+  font-weight: 700;
+  font-size: 16px;
+  /* background: red; */
+}
+.main__bottom .bottom__text {
+    color: hsl(0, 0%, 48%);
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.bottom__item {
+    border: 1px solid hsl(0, 0%, 48%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.bottom__item .item__head  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.bottom__item .item__head .head__left {
+    font-weight: 700;
+}
+.bottom__item .item__head .head__right {
+    color:hsl(176, 50%, 47%);
+    font-weight: 700;
+}
+.item__text {
+    color:hsl(0, 0%, 48%);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.item__bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom__right {
+   background:hsl(176, 50%, 47%);
+   color: white;
+   padding: 15px 20px;
+   border-radius: 50px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.bottom__left {
+    color:hsl(0, 0%, 48%);
+    font-size: 13px;
+    
+}
+.bottom__left span {
+    color: black;
+    font-size: 20px;
+    font-weight: 700px;
 }
 .poppup {
     position: fixed;
