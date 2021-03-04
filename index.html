@@ -31,7 +31,7 @@
     <div class="main__title">Mastercraft Bamboo Monitor Riser</div>
     <div class="main__text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</div>
   <div class="main__buttons">
-    <button>Back this project</button>
+    <button class="btn">Back this project</button>
     <div class="bookmark">
       <img src="images/icon-bookmark.svg" />
       <span>Bookmark</span>
@@ -108,9 +108,13 @@
 </div>
   
   <!-- Selection modal start -->
+  <div class="modal__big active">
   <div class="modal">
 
-    <h3 class="model__title">Back this project</h3>
+    <div class="modal__head">
+      <h3 class="model__title">Back this project</h3>
+      <div class="modal__close">X</div>
+    </div>
     <p class="model__text">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
     
     <div class="modal__item"> 
@@ -196,41 +200,76 @@
       
       <!-- Selection modal end -->
   </div>
+</div>
     
     <!-- Success modal start -->
-    
-  <div class="poppup">
-    <img src="images/icon-check.svg" />
-    <h5>Thanks for your support!</h5>
-    <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-    an email once our campaign is completed.</p>
-    <button>Got it!</button>
-  </div>
+
+    <div class="big disabled">
+      <div class="poppup ">
+        <img src="images/icon-check.svg" />
+        <h5>Thanks for your support!</h5>
+        <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+          an email once our campaign is completed.</p>
+          <button class="close">Got it!</button>
+        </div>
+      </div>
 
   <!-- Success modal end -->
 
   <script>
-    const modal__item = document.querySelectorAll(".modal__item");
-    const modal__item__select = document.querySelector(".modal__item__select");
-    const radio__title = document.querySelectorAll(".redio__title");
-    // console.log(radio__title);
+    // const modal__item = document.querySelectorAll(".modal__item");
+    // const modal__item__select = document.querySelector(".modal__item__select");
+    // const radio__title = document.querySelectorAll(".redio__title");
+    // // console.log(radio__title);
  
-    document.querySelectorAll(".modal__item").forEach(item => {
-      radio__title.addEventListener('click', ()=> {
+    // document.querySelectorAll(".modal__item").forEach(item => {
+    //   radio__title.addEventListener('click', ()=> {
        
-        item.classList.add("active");
+    //     item.classList.add("active");
        
-        // console.log("click")
-        // if(modal__item__select.style.visibility === "hidden") {
-          // modal__item__select.style.visibility = "visible";
-          // modal__item.style.height = "130px"
-        // }else {
-          // modal__item__select.style.visibility = "hidden";
-          // modal__item.style.height = "90px"
-        // }
+    //     // console.log("click")
+    //     // if(modal__item__select.style.visibility === "hidden") {
+    //       // modal__item__select.style.visibility = "visible";
+    //       // modal__item.style.height = "130px"
+    //     // }else {
+    //       // modal__item__select.style.visibility = "hidden";
+    //       // modal__item.style.height = "90px"
+    //     // }
 
-      })})
-    
+    //   })})
+    const big = document.querySelector('.big');
+    const btn = document.querySelector('.btn');
+    const close = document.querySelector('.close');
+
+    const modal__big = document.querySelector(".modal__big");
+    const modal__close = document.querySelector(".modal__close");
+
+    modal__close.addEventListener('click', () => {
+      modal__big.classList.remove("active");
+      modal__big.classList.add("disabled");
+    })
+    // const body = document.querySelector('body');
+    // console.log(body);
+    btn.addEventListener('click', () => {
+          modal__big.classList.remove("disabled");
+          modal__big.classList.add("active");
+
+    })
+
+
+    close.addEventListener('click', () => {
+      big.classList.remove("active");
+      big.classList.add("disabled");
+    })
+    // const body = document.querySelector('body');
+    // console.log(body);
+    btn.addEventListener('click', () => {
+          big.classList.remove("disabled");
+          big.classList.add("active");
+
+    })
+
+
   </script>
 
 </body>
