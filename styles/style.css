@@ -94,9 +94,6 @@ body {
     background:hsl(0, 12%, 92%);
     border-radius: 40px;
 }
-.bookmark img {
-
-}
 .bookmark span {
     color: hsl(0, 0%, 48%);
     font-weight: 700;
@@ -104,7 +101,46 @@ body {
     border-radius: 30px;
 }
 
+.main__middle {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 81.4%;
+    background: white;
+    padding: 60px ;
+}
 
+.main__middle__doller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.main__middle__doller .block{
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+}
+.main__middle__doller .inline {
+    display: inline;
+    color:hsl(0, 0%, 48%);
+    font-size: 12px;
+}
+
+.main__middle__ring {
+    margin-top: 30px;
+    width: 600px;
+    height: 10px;
+    background:hsl(0, 5%, 92%);
+    border-radius: 20px;
+}
+.main__middle__ring .ring__width{
+   width: 450px;
+   background:hsl(176, 50%, 47%);
+   border-radius: 20px;
+   height: 10px;
+}
 .poppup {
     position: fixed;
     left: 34%;
