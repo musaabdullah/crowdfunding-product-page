@@ -6,7 +6,104 @@
 body {
     font-family: 'Commissioner', sans-serif;
     /* background: rgba(0,0,0,0.5) */
+    background:hsl(0, 33%, 97%);
+
 }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    background:hsl(0, 33%, 97%);
+
+}
+.container__header {
+    display: flex;
+    background-image: url('/images/image-hero-desktop.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    /* background-position: center; */
+    height: 50vh;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.container__header img{
+  width: 100px;
+  height: 15px;
+}
+
+.container__nav a{
+ text-decoration: none;
+ color: white;
+ padding: 10px;
+}
+
+.container__main {
+    width: 50%;
+    position: absolute;
+    top: 90%;
+
+    /* background: red; */
+    /* background:hsl(0, 33%, 97%); */
+}
+.main__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 60px;
+    border-radius: 20px;
+}
+.main__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main__text {
+    color:hsl(0, 0%, 48%);
+    margin-top: 10px;
+    font-size: 14px;
+}
+.main__buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main__buttons button {
+    border: none;
+    padding: 0px 30px;
+    height: 50px;
+    background:hsl(176, 50%, 47%);
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:hsl(0, 12%, 92%);
+    border-radius: 40px;
+}
+.bookmark img {
+
+}
+.bookmark span {
+    color: hsl(0, 0%, 48%);
+    font-weight: 700;
+    padding: 18px;
+    border-radius: 30px;
+}
+
 
 .poppup {
     position: fixed;
